@@ -12,11 +12,23 @@ public class Main {
 		ContatoDAO contatoDao = new ContatoDAO();
 		
 		Contato contato = new Contato();
-		contato.setNome("Luiz Maia");
-		contato.setIdade(32);
+		contato.setNome("Julia Mafagafos");
+		contato.setIdade(27);
 		contato.setDataCadastro(new Date());
 		
-		contatoDao.save(contato);
+		//contatoDao.save(contato);
+		
+		//Atualizar cadastro de um contato
+		Contato c1 = new Contato();
+		c1.setNome("Luiz Ricardo");
+		c1.setIdade(33);
+		c1.setDataCadastro(new Date());
+		c1.setId(3);
+		
+		//contatoDao.update(c1);
+		
+		//Remover cadastro através do ID
+		//contatoDao.deleteByID(5);
 		
 		//Visualizar todos registros do banco
 		
